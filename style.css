@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(239, 239, 239);
+    /* color: white; */
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* topNavBar strat */
+.topNavBar {
+    position: fixed;
+    width: 100%;
+}
+
+.topNavBar .topNavBar-inner {
+    padding: 0 16px 0 0;
+}
+
+.topNavBar .logo {
+    float: left;
+    font-size: 24px;
+    font-family: 'Arial Black';
+    margin-top: 24px;
+    margin-left: 16px;
+}
+
+.topNavBar .logo .rs {
+    color: rgb(230, 104, 106);
+    margin-right: 5px;
+}
+
+.topNavBar .logo .card {
+    color: rgb(154, 157, 162);
+}
+
+.topNavBar nav {
+    float: right;
+}
+
+.topNavBar nav ul li {
+    list-style: none;
+    float: left;
+    margin: 0 18px;
+}
+
+.topNavBar nav ul li a {
+    /* text-decoration: none; */
+    color: rgb(183, 183, 183);
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    padding: 30px 0 5px 0;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.topNavBar nav ul li a:hover {
+    border-bottom: 3px solid rgb(224, 101, 103);
+}
+/* topNavBar End */
+
+.banner {
+    background: url('./imgs/rs-cover.jpg');
+    height: 515px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner .mask {
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.userCard {
+    max-width: 950px;
+    background-color: rgb(255, 255, 255);
+    margin: -340px auto 0;
+}
+
+.userCard .picture {
+    float: left;
+    margin-top: 50px;
+    margin-left: 52px;
+    margin-bottom: 50px;
+}
+
+.userCard .text {
+    float: left;
+    margin-top: 50px;
+    margin-left: 66px;
+}
+
+.userCard .text .welcome {
+    color: white;
+    background-color: rgb(230, 104, 106);
+    padding: 6px 16px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 25px;
+    /* line-height: 27px;
+    display: inline-block;
+    text-align: center; */
+}
+
+.userCard .text .triangle {
+    width: 0px;
+    border-left: 12px solid rgb(230, 104, 106);
+    border-bottom: 12px solid transparent;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 4px;
+}
+
+.userCard .text hr {
+    display: inline-block;
+    width: 450px;
+    border: none;
+    border-top: 1px solid rgb(222, 222, 222);
+    margin: 22px 0 20px 0;
+}
+
+.userCard .text dl dt {
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    margin: 7px 0;
+}
+
+.userCard .text dl dd {
+    color: rgb(157, 169, 198);
+    display: inline-block;
+    width: 50%;
+    margin: 7px 0;
+}
+
+.userCard footer.media {
+    background-color: rgb(230, 104, 106);
+    text-align: center;
+}
+
+.userCard footer.media a {
+    display: inline-block;
+    padding: 5px 0;
+    margin: 16px;
+    width: 35px;
+    line-height: 25px;
+    border-radius: 60%;
+}
+
+.userCard footer.media a:hover {
+    background-color: rgb(207, 93, 95);
+}
+
+.userCard footer.media a svg {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    vertical-align: top;
+}
+
+main .downloadPdf-wrapper {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+main .downloadPdf-wrapper .downloadPdf {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #cdcfd1;
+    background: #efefef;
+    display:inline-block;
+    border-radius: 2px;
+    color: #3d4451;
+    font-weight: bold;
+    margin: 32px 0;
+    transition: box-shadow 0.2s;
+}
+
+main .downloadPdf:hover {
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.2);
+}
+
+main .selfIntroduction {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: kai;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+section.skills,
+section.portfolio {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 60px;
+    /* border: 1px solid red; */
+}
+
+section.skills h2,
+section.portfolio h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2px;
+    font-weight: 600;
+}
+
+section.skills h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    padding-right: 40px;
+}
+
+section.skills ol {
+    background: white;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+}
+
+section.skills ol li {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+section.skills ol li:nth-child(even) {
+    float: right;
+}
+
+section.skills .progressBar {
+    height: 5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0 40px;
+}
+
+section.skills .progressBar .progress {
+    height: 100%;
+    background: #E6686A;
+    width: 70%;
+    border-radius: 2px;
+}
+
+section.portfolio {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section.portfolio nav {
+    text-align: center;
+}
+
+section.portfolio nav ol {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.portfolio nav ol li {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+section.portfolio nav ol li:first-child {
+    margin-left: 0;
+}
+
+section.portfolio nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+
+section.portfolio nav .bar {
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+}
+
+section.portfolio nav .bar-inner {
+    height: 100%;
+    background: #E6686A;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+section.portfolio nav .bar.state-1 .bar-inner {
+    margin-left: 0;
+    width: 50px;
+}
+
+section.portfolio nav .bar.state-2 .bar-inner {
+    margin-left: 65px;
+    width: 50px;
+}
+
+section.portfolio nav .bar.state-3 .bar-inner {
+    margin-left: 140px;
+    width: 54px;
+}
+
+section.portfolio .works {
+    position: relative;
+}
+
+section.portfolio .works .big,
+section.portfolio .works .small {
+    position: absolute;
+}
